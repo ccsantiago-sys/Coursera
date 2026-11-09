@@ -48,7 +48,223 @@ header {
 }
 
 header h3 {
+    color: white;
+    font-size: 26px;
+    margin: 0;
+}
+
+header p {
+    color: #ba9357;
+    margin: 0;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    white-space: nowrap;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+nav li a:hover {
+    text-decoration: underline;
+    position: relative;
+    bottom: 2px;
+    color: #ba9357;
+}
+
+main {
+    max-width: 1200px;
+    width: 100%;
+    margin: 20px auto;
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+header h3 {
     color: #fcf6ed;
     font-size: 26px;
     margin: 0;
+}
+
+section {
+    background-color: white;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ba9357;
+    border-radius: 12px;
+    scroll-margin-top: 110px;
+}
+
+section:target {
+    border: 2px solid #8a1538;
+}
+
+section h4 {
+    font-size: 22px;
+    margin: 0 0 20px 0;
+}
+
+.contenido {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+
+.formulario {
+    background-color: rgb(249, 243, 235);
+    padding: 20px;
+    border: 1px solid #ba9357;
+    border-radius: 12px;
+}
+
+.formulario h5 {
+    font-size: 17px;
+    margin-bottom: 12px;
+}
+
+form {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 12px 16px;
+    align-items: end;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.campo label {
+    font-size: 14px;
+}
+
+form input,
+form select {
+    width: 100%;
+    padding: 10px;
+    margin: 0;
+    border: 1px solid #ba9357;
+    border-radius: 10px;
+    box-sizing: border-box;
+    font-family: Arial;
+    font-size: 15px;
+    background-color: white;
+}
+
+form input:focus,
+form select:focus {
+    border: 1px solid #8a1538;
+}
+
+button {
+    background-color: #8a1538;
+    color: beige;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+button:hover {
+    background-color: #6f102d;
+}
+
+form button {
+    justify-self: start;
+    white-space: nowrap;
+}
+
+
+.lista {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+.tarjeta {
+    background-color: rgb(249, 243, 235);
+    border-radius: 12px;
+    padding: 18px 20px;
+    border: 1px solid #ba9357;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+
+.tarjeta p {
+    font-size: 14px;
+    color: rgb(44, 5, 5);
+    margin: 6px 0;
+}
+
+.tarjeta a {
+    color: #8a1538;
+}
+
+.tarjeta-encabezado {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.tarjeta-encabezado h5 {
+    font-size: 16px;
+}
+
+.tarjeta-encabezado .estatus {
+    margin: 0;
+}
+
+.datos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 8px 20px;
+}
+
+.datos p {
+    margin: 0;
+}
+
+.datos strong {
+    color: #8a1538;
+}
+
+@media screen and (max-width: 900px) {
+    section {
+        scroll-margin-top: 210px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    form {
+        grid-template-columns: 1fr;
+    }
+
+    form button {
+        justify-self: stretch;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    section {
+        padding: 15px;
+        scroll-margin-top: 180px;
+    }
 }

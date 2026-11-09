@@ -29,30 +29,162 @@
     </header>
 
 <main>
-    <section id="Alumnos">
+    <section id="Alumnos-activos">
         <div class="Activos">
         <h4>Alumnos activos</h4>
-        <p>José González Ramírez</p>
-        <p>Ana Sofía Pérez Sánchez</p>
-        <p>Luis Rodríguez Martínez</p>
-
-
-
-
+        <ul class="lista">
+                <li class="tarjeta">
+                    <div class="tarjeta-encabezado">
+                            <h5>Fátima Vázquez Pérez</h5>
+                    </div>
+                    <div class="datos">
+                            <p><strong>Correo:</strong> <a href="mailto:0304576@up.edu.mx">0304576@up.edu.mx</a></p>
+                            <p><strong>Carrera:</strong> Administración y Finanzas</p>
+                            <p><strong>Semestre:</strong> 5°</p>
+                            <p><strong>Fecha de inicio:</strong>03/11/2026</p>
+                    </div>
+                </li>
+ 
+                <li class="tarjeta urgencia-alta">
+                    <div class="tarjeta-encabezado">
+                            <h5>Ana Torres Sánchez</h5>
+                    </div>
+                    <div class="datos">
+                            <p><strong>Correo:</strong> <a href="mailto:0294576@up.edu.mx">0294576@up.edu.mx</a></p>
+                            <p><strong>Carrera:</strong> Ingeniería Industrial e Innovación de Negocios</p>
+                            <p><strong>Semestre:</strong> 3°</p>
+                            <p><strong>Fecha de inicio:</strong>05/11/2026</p>
+                    </div>
+                </li>
+ 
+                    <li class="tarjeta">
+                    <div class="tarjeta-encabezado">
+                            <h5>Sofía García Chávez</h5>
+                    </div>
+                    <div class="datos">
+                            <p><strong>Correo:</strong> <a href="mailto:0281098@up.edu.mx">0281098@up.edu.mx</a></p>
+                            <p><strong>Carrera:</strong> Ingeniería Civil</p>
+                            <p><strong>Semestre:</strong> 2°</p>
+                            <p><strong>Fecha de inicio:</strong>10/11/2026</p>
+                    </div>
+                    </li>
+                </ul>
+      
 
         </div>
     </section>
 
+            <section id="Alumnos-espera">
+            <h4>Alumnos lista de espera</h4>
+            <div class="contenido">
+                <div class="formulario">
+                    <h5>Agregar alumno</h5>
+                    <form>
+                        <div class="campo">
+                            <label for="alumno-nombre">Nombre:</label>
+                            <input type="text" id="alumno-nombre" name="alumno-nombre" placeholder="Nombre completo" required>
+                        </div>
+                        <div class="campo">
+                            <label for="alumno-carrera">Carrera:</label>
+                            <select name="alumno-carrera" id="alumno-carrera" required>
+                                <option value="" selected disabled hidden>Selecciona la carrera</option>
+                                <option value="c1">Ingeniería en Innovación y Diseño</option>
+                                <option value="c2">Ingeniería en Sistemas y Gráficas Computacionales</option>
+                                <option value="c3">Ingeniería Industrial e Innovación de Negocios</option>
+                                <option value="c4">Ingeniería Mecatrónica</option>
+                                <option value="c5">Ingeniería Civil</option>
+                                <option value="c6">Ingeniería en Animación Digital</option>
+                                <option value="c7">Arquitectura</option>
+                                <option value="c8">Producción y Creación Audiovisual</option>
+                                <option value="c9">Comunicación y opinión pública</option>
+                                <option value="c10">Publicidad y relaciones públicas</option>
+                                <option value="c11">Administración y Finanzas</option>
+                                <option value="c12">Mercadotecnia y Estrategia de Datos</option>
+                                <option value="c13">Administración y Negocios Internacionales</option>
+                                <option value="c14">Administración y Dirección</option>
+                                <option value="c15">Administración y Dirección de Empresas Familiares</option>
+                                <option value="c16">Administración del Talento</option>
+                                <option value="c17">Contaduría</option>
+                                <option value="c18">Dirección de Negocios Gastronómicos</option>
+                                <option value="c19">ESDAI</option>
+                                <option value="c20">Pedagogía</option>
+                                <option value="c21">Psicopedagogía</option>
+                                <option value="c22">Psicología</option>
+                                <option value="c23">Derecho</option>
+                            </select>
+                        </div>
+                        <div class="campo">
+                            <label for="alumno-semestre">Semestre:</label>
+                            <select name="alumno-semestre" id="alumno-semestre" required>
+                                <option value="" selected disabled hidden>Selecciona el semestre</option>
+                                <option value="1">1°</option>
+                                <option value="2">2°</option>
+                                <option value="3">3°</option>
+                                <option value="4">4°</option>
+                                <option value="5">5°</option>
+                                <option value="6">6°</option>
+                                <option value="7">7°</option>
+                                <option value="8">8°</option>
+                                <option value="9">9°</option>
+                                <option value="10">10°</option>
+                            </select>
+                        </div>
+                        <div class="campo">
+                            <label for="alumno-correo">Correo:</label>
+                            <input type="email" id="alumno-correo" name="alumno-correo" placeholder="Correo institucional" required>
+                        </div>
 
-
-
-
-
-
-
-
-
-
+                        <div class="campo">
+                            <label for="fecha-registro">Fecha registro:</label>
+                            <input type="date" id="fecha-registro" name="fecha-registro" required>
+                        </div>
+                        
+                        <button type="submit">Guardar alumno</button>
+                    </form>
+                </div>
+ 
+                <ul class="lista">
+                    <li class="tarjeta">
+                        <div class="tarjeta-encabezado">
+                            <h5>Diego Ramírez Pérez</h5>
+                        </div>
+                        <div class="datos">
+                            <p><strong>Correo:</strong> <a href="mailto:0304576@up.edu.mx">0304576@up.edu.mx</a></p>
+                            <p><strong>Carrera:</strong> Administración y Finanzas</p>
+                            <p><strong>Semestre:</strong> 5°</p>
+                            <p><strong>Fecha de registro:</strong>03/11/2026</p>
+                        </div>
+                    </li>
+ 
+                    <li class="tarjeta urgencia-alta">
+                        <div class="tarjeta-encabezado">
+                            <h5>Ana Torres Sánchez</h5>
+                        </div>
+                        <div class="datos">
+                            <p><strong>Correo:</strong> <a href="mailto:0294576@up.edu.mx">0294576@up.edu.mx</a></p>
+                            <p><strong>Carrera:</strong> Ingeniería Industrial e Innovación de Negocios</p>
+                            <p><strong>Semestre:</strong> 3°</p>
+                            <p><strong>Fecha de registro:</strong>05/11/2026</p>
+                        </div>
+                    </li>
+ 
+                    <li class="tarjeta">
+                        <div class="tarjeta-encabezado">
+                            <h5>Sofía García Chávez</h5>
+                        </div>
+                        <div class="datos">
+                            <p><strong>Correo:</strong> <a href="mailto:0281098@up.edu.mx">0281098@up.edu.mx</a></p>
+                            <p><strong>Carrera:</strong> Ingeniería Civil</p>
+                            <p><strong>Semestre:</strong> 2°</p>
+                            <p><strong>Fecha de registro:</strong>10/11/2026</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
 
 
 </main>
+
+</body>
+</html>
