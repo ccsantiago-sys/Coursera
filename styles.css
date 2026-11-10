@@ -279,6 +279,35 @@ form button {
     color: #58454b;
 }
 
+footer {
+    background-color: #8a1538;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 40px;
+    margin-top: 20px;
+}
+
+.logo-footer {
+    width: 110px;
+}
+
+.footer-info {
+    text-align: center;
+}
+
+footer h5 {
+    color: beige;
+    font-size: 16px;
+}
+
+footer p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
 @media screen and (max-width: 900px) {
     section {
         scroll-margin-top: 210px;
