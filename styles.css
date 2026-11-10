@@ -31,7 +31,6 @@ header {
 
 .logos {
     display: flex;
-    flex-direction: row;
     align-items: center;
     gap: 20px;
 }
@@ -48,13 +47,8 @@ header {
 }
 
 header h3 {
-    color: white;
+    color: #fcf6ed;
     font-size: 26px;
-    margin: 0;
-}
-
-header p {
-    color: #ba9357;
     margin: 0;
 }
 
@@ -69,7 +63,7 @@ header p {
 
 nav a {
     text-decoration: none;
-    color: white;
+    color: #fcf6ed;
     font-size: 18px;
 }
 
@@ -86,12 +80,6 @@ main {
     margin: 20px auto;
     padding: 0 40px;
     box-sizing: border-box;
-}
-
-header h3 {
-    color: #fcf6ed;
-    font-size: 26px;
-    margin: 0;
 }
 
 ol.lista {
@@ -119,18 +107,6 @@ section:target {
 section h4 {
     font-size: 22px;
     margin: 0 0 20px 0;
-}
-
-.aactivo li::marker {
-  color: #1aa5e1;
-  font-weight: bold;
-  font-size: 1.2em;
-}
-
-.contenido {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
 }
 
 
