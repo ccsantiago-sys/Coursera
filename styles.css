@@ -209,10 +209,7 @@ form button {
     margin: 0;
     padding: 0;
 }
-
-
-
-.tarjeta {
+.aactivo {
     background-color: rgb(249, 243, 235);
     border-radius: 12px;
     padding: 18px 20px;
@@ -221,18 +218,37 @@ form button {
     flex-direction: column;
     gap: 12px;
 }
-
-
-.tarjeta p {
+.aactivo p {
     font-size: 14px;
     color: rgb(44, 5, 5);
     margin: 6px 0;
 }
 
-.tarjeta a {
+.aactivo a {
     color: #8a1538;
 }
 
+.tarjetaespera {
+    background-color: rgb(249, 249, 247);
+    border-radius: 12px;
+    padding: 18px 20px;
+    border: 1px solid #ba9357;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.tarjetaespera p {
+    font-size: 14px;
+    color: rgb(65, 50, 50);
+    margin: 6px 0;
+}
+
+.tarjetaespera a {
+    color: #604e53;
+}
+.tarjetaespera h5 {
+    color: #4d4446;
+}
 .tarjeta-encabezado {
     display: flex;
     align-items: center;
@@ -260,7 +276,7 @@ form button {
 }
 
 .datos strong {
-    color: #8a1538;
+    color: #58454b;
 }
 
 @media screen and (max-width: 900px) {
